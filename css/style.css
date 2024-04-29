@@ -66,6 +66,7 @@ address{
 .header-container{
         display: flex;
         justify-content: start;
+
 }
 .header-nav {
         display: flex;
@@ -124,6 +125,7 @@ address{
         background: #2e2f42;
         margin-left: auto;
         margin-right: auto;
+        padding: 188px 0;
  }
  .main-box-container{
         padding-top: 188px;
@@ -139,11 +141,13 @@ address{
         text-align: center;
         color: #fff;
         margin-bottom: 48px;
+        max-width: 496px;
  }
 .section-box-button{
         background: #4d5ae5;
         border-radius: 4px;
         border:none;
+        display: block;
         padding: 16px 32px;
         min-width: 169px;
         height: 56px;
@@ -170,10 +174,11 @@ address{
         text-transform: capitalize;
         text-align: center;
         color: #2e2f42;
+        visibility: hidden;
 }
 .section-preor-list{
         display: flex;
-        column-gap: 24px;
+        gap: 24px;
 }
 .section-preor-text{
         width: calc((100% - 72px) / 3);
@@ -193,6 +198,7 @@ address{
         line-height: 1.2;
         letter-spacing: 0.02em;
         color: #2e2f42;
+        margin-bottom: 8px;
 }
 .preor-text{
         font-weight: 400;
@@ -213,17 +219,15 @@ address{
         text-transform: capitalize;
         text-align: center;
         color: #2e2f42;
-        padding-bottom: 72px;
+        margin-bottom: 72px;
 }
 .section-team-list{
         display: flex;
-        column-gap: 24px;
+        gap: 24px;
 }
 .section-team-worker{
     background-color: #fff;
-    width:calc((100%-72px) / 3);
-
-}
+    width: calc((100%-72px) / 3)}
 .team-header{
         font-weight: 500;
         font-size: 20px;
@@ -255,13 +259,13 @@ address{
 .section-portfolio-list{
         display: flex;
         flex-wrap: wrap;
-        gap: 48px 12px;
+        gap: 48px 24px;
 }
 .section-portfolio-app{
         border-bottom: 1px solid #e7e9fc;
         border-left: 1px solid #e7e9fc;
         border-right: 1px solid #e7e9fc;
-        width: calc((100% - 72) / 3);
+        width: calc((100% - 144) / 6);
 }
 .section-portfolio-app{
 
@@ -291,7 +295,7 @@ address{
 .main-footer-container{
         padding-top: 100px;
         padding-bottom: 100px;
-        padding-left: auto;
+        padding-left: 0;
         padding-right: 864px;
 
 }
