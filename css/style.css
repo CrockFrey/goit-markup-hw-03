@@ -5,16 +5,42 @@ body {
     font-size: 16px;
 }
 
-ul, ol{
-    list-style-type: none;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+        margin-top: 0;
+        margin-bottom: 0;
 }
 
+ul, ol{
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.container{
+        max-width: 1158px;
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-left: auto;
+        margin-right: auto;
+}
 a{
     text-decoration: none;
 }
 
 button{
     cursor: pointer;
+}
+ 
+img{
+   display: block;    
 }
 address{
         font-style: normal;
@@ -32,31 +58,78 @@ address{
 .text-head{
         color:#2e2f42;
 }
+.section-paddings{
+        padding-top: 120px;
+        padding-bottom: 120px;
+}
+/*============HEADER==========*/
+.header-container{
+        display: flex;
+        justify-content: start;
+}
+.header-nav {
+        display: flex;
+        align-items: center;
+}
 
+.header-address {
+        display: flex;
+        align-items: center;
+
+}
+.header-nav-list{
+        display: flex;
+        column-gap: 40px;
+        margin-left: 76px;
+}
+.header-address-list{
+        display: flex;
+        column-gap: 40px;
+        margin-left: 330px;
+}
 .header-nav-link{
+        display: block;
+        padding-top: 24px;
+        padding-bottom: 24px;
         font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #2e2f42;
 }
+
 .header-nav-link:hover,
 .header-nav-link:focus{
         color: #404bbf;
 }
 .header-adress-item{
+        display: block;
+        padding-top: 24px;
+        padding-bottom: 24px;
         font-weight: 400;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #434455;
 }
+
  .header-adress-item:hover,
  .header-adress-item:focus{
         color: #404bbf;
  }
+ /*==========Main Box=========*/
+
  .section-box{
+        max-width: 1440px;
         background: #2e2f42;
+        margin-left: auto;
+        margin-right: auto;
+ }
+ .main-box-container{
+        padding-top: 188px;
+        padding-bottom: 292px;
+        padding-left: 331px;
+        padding-right: 331px;
  }
  .section-box-head{
         font-weight: 700;
@@ -65,22 +138,30 @@ address{
         letter-spacing: 0.02em;
         text-align: center;
         color: #fff;
+        margin-bottom: 48px;
  }
 .section-box-button{
-    background: #4d5ae5;
-}
- .section-box-button:hover,
- .section-box-button:focus{
-        background:#404bbf;
- }
- .section-box-button{
+        background: #4d5ae5;
+        border-radius: 4px;
+        border:none;
+        padding: 16px 32px;
+        min-width: 169px;
+        height: 56px;
+        margin-left: 164px;
+        margin-right: 164px;
         font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.04em;
         color: #fff;
- }
 
+}
+ .section-box-button:hover,
+ .section-box-button:focus{
+        background:#404bbf;
+ }
+ 
+/*==========Preorities======*/
 .section-preor-head{
         font-weight: 700;
         font-size: 36px;
@@ -89,6 +170,22 @@ address{
         text-transform: capitalize;
         text-align: center;
         color: #2e2f42;
+}
+.section-preor-list{
+        display: flex;
+        column-gap: 24px;
+}
+.section-preor-text{
+        width: calc((100% - 72px) / 3);
+}
+.section-team-worker{
+        border-radius: 0 0 4px 4px;
+        padding: 0px 0px 32px 0px;
+        height: 380px;
+        width: calc((100% - 72px) / 3);
+        box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+        background: #fff;
+        
 }
 .preor-head{
         font-weight: 500;
@@ -103,6 +200,8 @@ address{
         line-height: 1.5;
         letter-spacing: 0.02em;
 }
+
+/*======Our Team======*/
 .section-team{
     background:#f4f4fd;;
 }
@@ -114,9 +213,16 @@ address{
         text-transform: capitalize;
         text-align: center;
         color: #2e2f42;
+        padding-bottom: 72px;
+}
+.section-team-list{
+        display: flex;
+        column-gap: 24px;
 }
 .section-team-worker{
     background-color: #fff;
+    width:calc((100%-72px) / 3);
+
 }
 .team-header{
         font-weight: 500;
@@ -125,14 +231,17 @@ address{
         letter-spacing: 0.02em;
         text-align: center;
         color: #2e2f42;
+        padding-top: 32px;
 }
 .team-prof{
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    text-align: center;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        text-align: center;
+        padding-bottom: 32px;
 }
+/*==========Portfolio=========*/
 .section-portfolio-head{
         font-weight: 700;
         font-size: 36px;
@@ -141,7 +250,23 @@ address{
         text-transform: capitalize;
         text-align: center;
         color: #2e2f42;
+        padding-bottom: 72px;
 }
+.section-portfolio-list{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 48px 12px;
+}
+.section-portfolio-app{
+        border-bottom: 1px solid #e7e9fc;
+        border-left: 1px solid #e7e9fc;
+        border-right: 1px solid #e7e9fc;
+        width: calc((100% - 72) / 3);
+}
+.section-portfolio-app{
+
+}
+
 .portfolio-name{
         font-weight: 500;
         font-size: 20px;
@@ -149,14 +274,26 @@ address{
         letter-spacing: 0.02em;
         color: #2e2f42;
 }
+
 .portfolio-descr{
         font-weight: 400;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;;
 }
+/*===========FOOTER==========*/
 .footer-box{
-    background:#2e2f42;;
+    background:#2e2f42;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.main-footer-container{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-left: auto;
+        padding-right: 864px;
+
 }
 .footer-text{
         font-weight: 400;
@@ -164,6 +301,8 @@ address{
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #f4f4fd;
+        padding-top: 16px;
+
 }
 .footer-logo{
         font-family: "Raleway", sans-serif;
@@ -172,7 +311,7 @@ address{
         line-height: 1.17;
         letter-spacing: 0.03em;
         text-transform: uppercase;
-         color: #4d5ae5;
+        color: #4d5ae5;
 }
 .text-footer{
 color:#f4f4fd;
