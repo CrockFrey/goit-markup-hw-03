@@ -276,7 +276,7 @@ address{
         gap: 48px 24px;
 }
 .section-portfolio-app{
-        width: calc((100% - 48) / 3);
+        width: calc((100% - 48) /3 );
 }
 .section-portfolio-app{
 
